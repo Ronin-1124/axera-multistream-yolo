@@ -1,0 +1,23 @@
+{
+  "streams": [
+    { "id": 0, "url": "./data/test_videos_720P/test7.mp4", "enabled": true }
+  ],
+  "model": {
+    "path": "./models/yolo26x.axmodel",
+    "input_h": 640,
+    "input_w": 640,
+    "type": "yolo26"
+  },
+  "inference": {
+    "num_threads": 0,
+    "conf_thresh": 0.45,
+    "iou_thresh": 0.45
+  },
+  "output": {
+    "display": true,
+    "mosaic_cols": 1,
+    "queue_depth": 4,
+    "display_w": 1280,
+    "display_h": 720
+  }
+}

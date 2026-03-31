@@ -1,0 +1,28 @@
+{
+  "streams": [
+    { "id": 0, "url": "./data/test_videos_720P/test1.mp4", "enabled": true },
+    { "id": 1, "url": "./data/test_videos_720P/test2.mp4", "enabled": true },
+    { "id": 2, "url": "./data/test_videos_720P/test3.mp4", "enabled": true },
+    { "id": 3, "url": "./data/test_videos_720P/test4.mp4", "enabled": true },
+    { "id": 4, "url": "./data/test_videos_720P/test5.mp4", "enabled": true },
+    { "id": 5, "url": "./data/test_videos_720P/test6.mp4", "enabled": true }
+  ],
+  "model": {
+    "path": "./models/yolo26l.axmodel",
+    "input_h": 640,
+    "input_w": 640,
+    "type": "yolo26"
+  },
+  "inference": {
+    "num_threads": 0,
+    "conf_thresh": 0.45,
+    "iou_thresh": 0.45
+  },
+  "output": {
+    "display": true,
+    "mosaic_cols": 3,
+    "queue_depth": 4,
+    "display_w": 1600,
+    "display_h": 600
+  }
+}
